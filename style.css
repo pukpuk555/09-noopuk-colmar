@@ -21,17 +21,21 @@ header {
     margin: 0 auto;
     justify-content: space-between;
     padding: 0 24px;
+
     a {
       text-decoration: none;
       color: black;
     }
+
     .logo {
       display: flex;
       align-items: center;
+
       img {
         height: 40px;
       }
     }
+
     ul {
       height: 64px;
       gap: 16px;
@@ -47,31 +51,39 @@ main {
     color: rgb(59, 59, 59);
     font-size: 37px;
   }
+
   h2 {
     color: rgb(59, 59, 59);
     font-size: 32px;
   }
+
   h3 {
     color: rgb(59, 59, 59);
     font-size: 22px;
   }
+
   p {
     color: rgb(59, 59, 59);
   }
+
   .hero {
     background-color: rgb(207, 207, 207);
+
     .container {
       width: 1024px;
       display: flex;
       margin: 0 auto;
+
       .hero_left {
         width: 60%;
         min-width: 60%;
         padding: 32px 24px;
+
         img {
           max-width: 100%;
         }
       }
+
       .hero_right {
         display: flex;
         flex-direction: column;
@@ -79,6 +91,7 @@ main {
         gap: 24px;
         padding-right: 110px;
       }
+
       a {
         text-decoration: none;
         color: white;
@@ -88,6 +101,7 @@ main {
         justify-content: center;
         padding: 8px 0;
         transition: ease 0.3s all;
+
         &:hover {
           background-color: rgb(116, 116, 116);
           color: rgb(29, 29, 29);
@@ -95,38 +109,49 @@ main {
       }
     }
   }
+
   .information {
     .container {
       width: 1024px;
       display: flex;
       margin: 0 auto;
+
       .info_left {
         width: 60%;
         margin: 32px 24px;
+
         img {
           max-width: 100%;
           padding-bottom: 32px;
         }
+
         h2 {
           magin: 32px 0;
         }
+
         p {
           margin: 32px 0;
         }
       }
+
       .info_right {
         width: 40%;
         padding-top: 18px;
+
         .card {
           display: flex;
           padding: 16px;
+          transition: ease 0.3s all;
+
           .card_image {
             height: auto;
             width: 35%;
+
             img {
               width: 100%;
             }
           }
+
           .card_detail {
             display: flex;
             flex-direction: column;
@@ -134,15 +159,136 @@ main {
             padding-left: 24px;
             gap: 8px;
             width: 65%;
+
             a {
               text-decoration: none;
             }
+          }
+
+          &:hover {
+            background-color: rgb(189, 189, 189);
           }
         }
       }
     }
   }
+
   .course {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(231, 231, 231);
+    display: flex;
+
+    h2 {
+      margin: 32px 0;
+    }
+
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+
+      .label {
+        display: flex;
+        justify-content: center;
+      }
+
+      .course_info {
+        display: flex;
+        flex-direction: column;
+
+        .side {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          padding: 0 72px;
+          gap: 32px;
+          padding-bottom: 24px;
+        }
+
+        .card {
+          display: flex;
+          flex-wrap: wrap;
+          width: 30%;
+          transition: ease 0.3s all;
+          .card_image {
+            img {
+              width: 100%;
+            }
+          }
+
+          .card_detail {
+            padding-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+          &:hover {
+            background-color: rgb(160, 160, 160);
+          }
+        }
+      }
+    }
+  }
+
+  .thesis {
+    display: flex;
+
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+
+      .label {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+          padding: 32px 0;
+        }
+      }
+    }
+  }
+}
+
+.thesis_info {
+  display: flex;
+  .thesis_left {
+    width: 60%;
+    padding-left: 4px;
+    padding-right: 24px;
+    video {
+      width: 100%;
+    }
+    .under_video {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        padding-top: 24px;
+      }
+      p {
+        margin: 8px 0 32px 0;
+      }
+    }
+  }
+  .thesis_right {
+    .card {
+      display: flex;
+      padding: 16px;
+      transition: ease 0.3s all;
+      .card_image {
+        width: 35%;
+        img {
+          width: 100%;
+        }
+      }
+      .card_detail {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        padding: 0 16px;
+        justify-content: center;
+        gap: 8px;
+      }
+      &:hover {
+        background-color: rgb(214, 214, 214);
+      }
+    }
   }
 }
