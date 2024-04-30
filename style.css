@@ -142,4 +142,7 @@ main {
       }
     }
   }
+  .course {
+    background-color: rgb(235, 235, 235);
+  }
 }
