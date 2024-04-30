@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
@@ -28,6 +28,9 @@ header {
     .logo {
       display: flex;
       align-items: center;
+      img {
+        height: 40px;
+      }
     }
     ul {
       height: 64px;
@@ -44,6 +47,14 @@ main {
     color: rgb(59, 59, 59);
     font-size: 37px;
   }
+  h2 {
+    color: rgb(59, 59, 59);
+    font-size: 32px;
+  }
+  h3 {
+    color: rgb(59, 59, 59);
+    font-size: 22px;
+  }
   p {
     color: rgb(59, 59, 59);
   }
@@ -56,16 +67,17 @@ main {
       .hero_left {
         width: 60%;
         min-width: 60%;
+        padding: 32px 24px;
         img {
           max-width: 100%;
         }
       }
       .hero_right {
-        padding: 0 24px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 24px;
+        padding-right: 110px;
       }
       a {
         text-decoration: none;
@@ -75,6 +87,58 @@ main {
         display: flex;
         justify-content: center;
         padding: 8px 0;
+        transition: ease 0.3s all;
+        &:hover {
+          background-color: rgb(116, 116, 116);
+          color: rgb(29, 29, 29);
+        }
+      }
+    }
+  }
+  .information {
+    .container {
+      width: 1024px;
+      display: flex;
+      margin: 0 auto;
+      .info_left {
+        width: 60%;
+        margin: 32px 24px;
+        img {
+          max-width: 100%;
+          padding-bottom: 32px;
+        }
+        h2 {
+          magin: 32px 0;
+        }
+        p {
+          margin: 32px 0;
+        }
+      }
+      .info_right {
+        width: 40%;
+        padding-top: 18px;
+        .card {
+          display: flex;
+          padding: 16px;
+          .card_image {
+            height: auto;
+            width: 35%;
+            img {
+              width: 100%;
+            }
+          }
+          .card_detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 24px;
+            gap: 8px;
+            width: 65%;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
   }
