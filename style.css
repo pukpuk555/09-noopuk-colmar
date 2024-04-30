@@ -292,3 +292,20 @@ main {
     }
   }
 }
+
+footer {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 0.5px;
+    .f {
+      padding: 16px 24px;
+      a {
+        text-decoration: none;
+        color: rgb(71, 71, 71);
+      }
+    }
+  }
+}
