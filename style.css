@@ -59,10 +59,14 @@ header {
     }
     .container {
       display: flex;
+      justify-content: space-evenly !important;
+      width: auto !important;
     }
     div.nav_mobile {
       height: 64px;
       display: flex !important;
+      justify-content: space-evenly !important;
+      gap: 60px;
       align-items: center;
     }
   }
@@ -189,6 +193,10 @@ main {
             }
           }
 
+          .mobile_card_image {
+            display: none;
+          }
+
           .card_detail {
             display: flex;
             flex-direction: column;
@@ -210,11 +218,32 @@ main {
     }
     @media (max-width: 1000px) {
       .container {
+        width: auto !important;
+        justify-content: center;
         .info_left {
           display: none;
         }
-        info_right {
-          width: 100%;
+      }
+      div.info_right {
+        width: auto !important;
+      }
+      .info_card {
+        gap: 64px;
+        margin: 16px;
+      }
+      .card {
+        flex-direction: column;
+        .card_image {
+          display: none;
+        }
+        .mobile_card_image {
+          display: flex !important;
+          img {
+            width: 100%;
+          }
+        }
+        .card_detail {
+          padding-top: 20px;
         }
       }
     }
@@ -235,6 +264,10 @@ main {
       .label {
         display: flex;
         justify-content: center;
+      }
+
+      .mobile_couse_info {
+        display: none;
       }
 
       .course_info {
@@ -273,6 +306,36 @@ main {
         }
       }
     }
+
+    @media (max-width: 1000px) {
+      .container {
+        background-color: white;
+        .side {
+          display: none !important;
+        }
+        .mobile_couse_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 24px;
+          .mobile_list {
+            border: hidden;
+            width: 300px;
+            .list {
+              padding-bottom: 3px;
+            }
+            h3 {
+              background-color: rgb(206, 206, 206);
+              padding: 16px 16px 24px 16px;
+              transition: ease 0.3s all;
+              &:hover {
+                background-color: rgb(151, 151, 151);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .thesis {
@@ -289,6 +352,9 @@ main {
         h2 {
           padding: 32px 0;
         }
+      }
+      .thesis_video {
+        display: none;
       }
     }
   }
@@ -339,6 +405,26 @@ main {
     }
   }
 }
+@media (max-width: 1000px) {
+  .thesis {
+    padding: 0%;
+    padding-bottom: 24px;
+    width: auto;
+    .thesis_info {
+      display: none !important;
+    }
+    .mobile_thesis {
+      max-width: auto;
+      .thesis_video {
+        display: flex !important;
+        width: auto;
+        video {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
 footer {
   .container {
@@ -353,6 +439,13 @@ footer {
         text-decoration: none;
         color: rgb(71, 71, 71);
       }
+    }
+    @media (max-width: 1000px) {
+      a {
+        display: none;
+      }
+      font-size: 10px;
+      border: none;
     }
   }
 }
