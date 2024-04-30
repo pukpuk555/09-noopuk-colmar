@@ -13,6 +13,7 @@ h1 {
 }
 
 header {
+  border-top: solid 0.1px;
   div.container {
     width: 1024px;
     display: flex;
@@ -36,11 +37,32 @@ header {
       }
     }
 
+    .nav_mobile {
+      display: none;
+    }
+
     ul {
       height: 64px;
       gap: 16px;
       list-style: none;
       display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .logo {
+      display: none !important;
+    }
+    .nav {
+      display: none;
+    }
+    .container {
+      display: flex;
+    }
+    div.nav_mobile {
+      height: 64px;
+      display: flex !important;
       align-items: center;
     }
   }
@@ -108,6 +130,21 @@ main {
         }
       }
     }
+
+    @media (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        .hero_left {
+          width: auto;
+          padding: 0;
+        }
+        .hero_right {
+          padding: 32px 16px;
+        }
+      }
+    }
   }
 
   .information {
@@ -168,6 +205,16 @@ main {
           &:hover {
             background-color: rgb(189, 189, 189);
           }
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      .container {
+        .info_left {
+          display: none;
+        }
+        info_right {
+          width: 100%;
         }
       }
     }
